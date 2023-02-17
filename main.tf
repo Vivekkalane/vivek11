@@ -7,7 +7,7 @@ variable "location" {
 variable "name" {
   default = "vivek_cosmos"
 }
-resource "azurerm_resource_group" "Vivek_Cosmos" {
+resource "azurerm_resource_group" "vivek_cosmos" {
   location = var.location
   name = var.name
   tags = {

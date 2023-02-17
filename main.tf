@@ -5,7 +5,7 @@ variable "location" {
   default = "eastus"
 }
 variable "name" {
-  default = "Vivek_Cosmos"
+  default = "vivek_cosmos"
 }
 resource "azurerm_resource_group" "Vivek_Cosmos" {
   location = var.location
@@ -18,7 +18,7 @@ resource "azurerm_resource_group" "Vivek_Cosmos" {
 resource "azurerm_cosmosdb_account" "GlobalDocumentDB" {
   name                      = var.name
   location                  = var.location
-  resource_group_name       = azurerm_resource_group.Vivek_Cosmos.name
+  resource_group_name       = azurerm_resource_group.vivek_cosmos.name
   offer_type                = "Standard"
   kind                      = "GlobalDocumentDB"
   enable_automatic_failover = false

@@ -5,7 +5,7 @@ variable "location" {
   default = "eastus"
 }
 variable "name" {
-  default = "vivek_cosmos"
+  default = "vivek-cosmos"
 }
 resource "azurerm_resource_group" "vivek_cosmos" {
   location = var.location

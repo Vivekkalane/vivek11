@@ -7,5 +7,7 @@ resource "azurerm_resource_group" "Vivek_Cosmos" {
   tags = {
     Name = "Vivek"
     Day = "6"
+    Team = "DataApps"
+    Role = "Data Engineer"
   }
 }
